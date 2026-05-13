@@ -2,8 +2,8 @@ node_modules/
 .expo/
 dist/
 build/
-.env
 .env.local
+# app/.env intentionally tracked — only holds the dev mock-server URL, no secrets
 *.log
 *.tsbuildinfo
 .DS_Store

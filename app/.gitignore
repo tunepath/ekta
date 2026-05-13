@@ -2,8 +2,8 @@ node_modules/
 .expo/
 dist/
 *.log
-.env
 .env.local
+# .env intentionally tracked — only holds the dev mock-server URL, no secrets
 ios/
 android/
 *.tsbuildinfo
