@@ -12,7 +12,11 @@
  * a deterministic random embedding (useful for non-device development).
  */
 
-import type { TensorflowModel } from 'react-native-fast-tflite';
+// Structural type — avoids hard dep on `react-native-fast-tflite` at type-check
+// time. The runtime require() is wrapped in try/catch so missing module is fine.
+type TensorflowModel = {
+  run: (inputs: unknown[]) => Promise<unknown[]>;
+};
 
 let model: TensorflowModel | null = null;
 let loading: Promise<TensorflowModel | null> | null = null;

@@ -6,7 +6,7 @@
     "version": "0.1.0",
     "orientation": "portrait",
     "userInterfaceStyle": "dark",
-    "newArchEnabled": true,
+    "newArchEnabled": false,
     "ios": {
       "supportsTablet": false,
       "bundleIdentifier": "com.ektahr.kiosk",
@@ -33,14 +33,6 @@
         "expo-location",
         {
           "locationAlwaysAndWhenInUsePermission": "Required to tag attendance punches with the kiosk's location."
-        }
-      ],
-      [
-        "react-native-vision-camera",
-        {
-          "cameraPermissionText": "ektaHr Kiosk uses the camera to recognize faces and mark attendance.",
-          "enableMicrophonePermission": false,
-          "enableFrameProcessors": true
         }
       ]
     ],

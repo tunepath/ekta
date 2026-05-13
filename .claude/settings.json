@@ -17,7 +17,8 @@
       "Bash(grep -E \"\\\\.js$\")",
       "Bash(timeout 30 npx react-native start --port 8081)",
       "Bash(node node_modules/expo/bin/cli config --json --type prebuild)",
-      "Bash(node node_modules/eas-cli/bin/run build --profile preview --platform android --non-interactive --no-wait)"
+      "Bash(node node_modules/eas-cli/bin/run build --profile preview --platform android --non-interactive --no-wait)",
+      "Bash(node node_modules/eas-cli/bin/run build:view 0a574d63-d4aa-4794-97e6-b4ce3a594bc7)"
     ]
   }
 }
