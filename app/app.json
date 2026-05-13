@@ -34,6 +34,14 @@
         {
           "locationAlwaysAndWhenInUsePermission": "Required to tag attendance punches with the kiosk's location."
         }
+      ],
+      [
+        "react-native-vision-camera",
+        {
+          "cameraPermissionText": "ektaHr Kiosk uses the camera to recognize faces and mark attendance.",
+          "enableMicrophonePermission": false,
+          "enableFrameProcessors": true
+        }
       ]
     ],
     "extra": {
