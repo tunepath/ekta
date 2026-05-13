@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__claude_ai_Figma__get_metadata",
+      "mcp__claude_ai_Figma__get_variable_defs",
+      "mcp__claude_ai_Figma__get_design_context",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(curl -s http://localhost:3000/)",
+      "Bash(curl -s http://localhost:3000/employees)",
+      "Bash(curl -s -X POST http://localhost:3000/offices/match -H \"Content-Type: application/json\" -d '{\"lat\":19.076,\"lng\":72.8777}')",
+      "Bash(npx tsc *)",
+      "Bash(npx expo-doctor *)",
+      "Bash(node node_modules/expo/bin/cli config)",
+      "Bash(NODE_OPTIONS=\"--no-experimental-strip-types\" node node_modules/expo/bin/cli config)",
+      "Bash(npx expo *)",
+      "Bash(grep -E \"\\\\.js$\")",
+      "Bash(timeout 30 npx react-native start --port 8081)",
+      "Bash(node node_modules/expo/bin/cli config --json --type prebuild)",
+      "Bash(node node_modules/eas-cli/bin/run build --profile preview --platform android --non-interactive --no-wait)"
+    ]
+  }
+}
