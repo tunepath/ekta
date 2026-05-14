@@ -1,18 +1,15 @@
 import * as Crypto from 'expo-crypto';
 
-/**
- * PIN hashing helpers. We use PBKDF2-style derivation by repeated SHA-256
- * (Argon2 is not available cross-platform without native modules).
- *
- * For a 6-digit PIN with a per-admin random salt, 100k iterations of SHA-256
- * is sufficient to make brute-force on a stolen device painful.
- */
+const ITERATIONS = 2_000;
 
-const ITERATIONS = 100_000;
+function bytesToHex(bytes: Uint8Array): string {
+  let out = '';
+  for (let i = 0; i < bytes.length; i++) out += bytes[i].toString(16).padStart(2, '0');
+  return out;
+}
 
 export function generateSalt(): string {
-  const bytes = Crypto.getRandomBytes(16);
-  return Buffer.from(bytes).toString('hex');
+  return bytesToHex(Crypto.getRandomBytes(16));
 }
 
 export async function hashPin(pin: string, salt: string): Promise<string> {
