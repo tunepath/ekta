@@ -28,6 +28,7 @@ export type RootStackParamList = {
     today_minutes?: number;
   };
   PunchFailure: { reason: string };
+  PunchProcessing: { type: 'in' | 'out' };
   ConsentBiometric: undefined;
 };
 

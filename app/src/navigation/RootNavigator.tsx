@@ -9,6 +9,7 @@ import { ForgotPinScreen } from '@/features/pin/screens/ForgotPinScreen';
 import { IdleScreen } from '@/features/kiosk/screens/IdleScreen';
 import { PunchSuccessScreen } from '@/features/kiosk/screens/PunchSuccessScreen';
 import { PunchFailureScreen } from '@/features/kiosk/screens/PunchFailureScreen';
+import { PunchProcessingScreen } from '@/features/kiosk/screens/PunchProcessingScreen';
 import { AdminMenuScreen } from '@/features/admin/screens/AdminMenuScreen';
 import { EnrollFaceScreen } from '@/features/admin/screens/EnrollFaceScreen';
 import { SettingsScreen } from '@/features/admin/screens/SettingsScreen';
@@ -44,6 +45,7 @@ export function RootNavigator() {
         options={{ animation: 'fade', presentation: 'transparentModal' }}
       />
       <Stack.Screen name="PunchFailure" component={PunchFailureScreen} />
+      <Stack.Screen name="PunchProcessing" component={PunchProcessingScreen} />
       <Stack.Screen name="AdminMenu" component={AdminMenuScreen} />
       <Stack.Screen name="EnrollFace" component={EnrollFaceScreen} />
       <Stack.Screen name="Settings" component={SettingsScreen} />

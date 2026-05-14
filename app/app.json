@@ -36,9 +36,18 @@
         }
       ],
       [
+        "react-native-vision-camera",
+        {
+          "cameraPermissionText": "ektaHr Kiosk uses the camera to recognize faces and mark attendance.",
+          "enableMicrophonePermission": false,
+          "enableFrameProcessors": true
+        }
+      ],
+      [
         "expo-build-properties",
         {
           "android": {
+            "minSdkVersion": 26,
             "compileSdkVersion": 35,
             "targetSdkVersion": 34
           },
